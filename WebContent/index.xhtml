@@ -11,7 +11,46 @@ xmlns:f="http://java.sun.com/jsf/core">
 </h:head>
 <h:body>
 
+<div class="container-fluid fixed" id="main-navigation">
+	<div class="container-fix">
+	</div> <!--  NAVEGAÇÃO PRINCIPAL -->
+</div> <!-- CONTAINER FLUID -->
 
+<div class="container-fluid" id="content">
+	<div class="container-fix" id="main-content">
+	
+		<div class="senai-image">
+			<img src="resources/images/senai.png" alt="Aluno Senai" />
+		</div>
+	
+		<div class="cadastro">
+			<h:form>
+				<h:outputLabel value="Seu nome:" />
+				<br />
+					<h:inputText placeholder="Seu nome:" />
+			
+				<br />
+				 <h:outputLabel value="Seu Login:" />
+					<h:inputText placeholder="Seu login:" />
+					
+				<br />
+				 <h:outputLabel value="Sua senha:" />
+					<h:inputText placeholder="Sua senha:" />
+			
+				<span>
+					Ao clicar em cadastrar, o usuário concord com os termos e condições
+					que podem ser acessados neste link.
+				</span>
+			
+				<h:commandButton value="Cadastrar" />
+			
+			</h:form>
+		</div>
+	
+	
+	</div>
+
+</div>
 
 
 

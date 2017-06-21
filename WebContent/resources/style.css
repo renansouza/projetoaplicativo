@@ -33,10 +33,64 @@ table {
 	width: 100%;
 }
 
+.container-fix{
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
 .fixed{
 	position: fixed;
 	z-index: 999999;
 }
 
 /* NAVEGAÇÃO */
+
+#main-navigation{
+	height: 170px;
+	background: rgba(0,102,153,0.70);
+}
+
+/* CONTENT */
+
+#content{
+	background: url('./images/content-bg.png') center center no-repeat;
+	position: absolute;
+	background-size: cover;
+}
+
+.senai-image{
+	float: left;
+	width: 700px;
+}
+
+.cadastro{
+	float: right;
+	width: 400px;
+	background: rgba(255,255,255, 0.5);
+	border: 2px solid #FF8D00;
+	padding: 1rem;
+}
+
+#main-content{
+	margin-top: 15%;
+}
+
+#main-content form{
+	float: right;	
+	width: 100%;
+}
+#main-content form label{
+	font: 1.2rem sans-serif ;
+}
+#main-content form input{
+	padding: 10px;
+	display: block;
+	width: 100%;
+	font: 1.2rem sans-serif ;
+}
+#main-content form span{
+	font: 1rem sans-serif ;
+	margin: 10px;
+	float: left;
+}
 
