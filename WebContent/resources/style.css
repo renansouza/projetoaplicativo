@@ -1,0 +1,42 @@
+/* CSS RESET */
+
+html,body{
+	height: 100%;
+}
+
+html, body, div, span,
+h1, h2, h3, h4, h5, h6, p, blockquote,
+a, address, em, img, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, figure, figcaption, footer, header, hgroup, menu, nav, output, section, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+	line-height: 1;
+	font-size: 62.7%;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CLASSES UTILITÁRIAS */
+
+.container-fluid{
+	width: 100%;
+}
+
+.fixed{
+	position: fixed;
+	z-index: 999999;
+}
+
+/* NAVEGAÇÃO */
+
