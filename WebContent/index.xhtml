@@ -2,7 +2,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
 xmlns:h="http://java.sun.com/jsf/html"
-xmlns:f="http://java.sun.com/jsf/core">
+xmlns:f="http://java.sun.com/jsf/core"
+xmlns:p="http://primefaces.org/ui"
+xmlns:ui="http://java.sun.com/jsf/facelets">
 <h:head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
 <title>Seja bem vindo!</title>
@@ -13,6 +15,19 @@ xmlns:f="http://java.sun.com/jsf/core">
 
 <div class="container-fluid fixed" id="main-navigation">
 	<div class="container-fix">
+	
+		<div class="logotipo">
+			<img src="resources/images/senai-logo.png" alt="logotipo senai" />
+		</div>
+	
+		<div class="navigation">
+			<a href="#">Página Inicial</a>
+			<a href="#">Perguntas frequentes</a>
+			<a href="#">Fale Conosco</a>
+			<a href="#">Área do participante</a>
+		</div>
+	
+	
 	</div> <!--  NAVEGAÇÃO PRINCIPAL -->
 </div> <!-- CONTAINER FLUID -->
 
@@ -24,36 +39,48 @@ xmlns:f="http://java.sun.com/jsf/core">
 		</div>
 	
 		<div class="cadastro">
+			<h2>Ainda não está participando?</h2>
+				<h3>Corra, e faça logo a sua inscrição!</h3>
 			<h:form>
-				<h:outputLabel value="Seu nome:" />
+				<p:outputLabel value="Seu nome:" />
 				<br />
-					<h:inputText placeholder="Seu nome:" />
+					<p:inputText placeholder="Por favor, informe seu nome" />
 			
 				<br />
 				 <h:outputLabel value="Seu Login:" />
-					<h:inputText placeholder="Seu login:" />
+					<p:inputText placeholder="Informe um login" />
 					
 				<br />
 				 <h:outputLabel value="Sua senha:" />
-					<h:inputText placeholder="Sua senha:" />
+					<p:inputText placeholder="Informe uma senha" />
 			
 				<span>
-					Ao clicar em cadastrar, o usuário concord com os termos e condições
+					Ao clicar em cadastrar, o usuário concorda com os termos e condições
 					que podem ser acessados neste link.
 				</span>
 			
-				<h:commandButton value="Cadastrar" />
+				<p:commandButton value="Cadastrar" />
 			
 			</h:form>
-		</div>
-	
-	
+		</div>	
 	</div>
 
 </div>
 
 
-
+<div class="container-fluid" id="rodape">
+	<div class="container-fix" id="rodape-inner">
+		<span class="copyright">
+			Sistema FIEB - Todos os direitos reservados - &copy; 2017 <br />
+			É proibida a cópia parcial e/ou total do conteúdo desse website.
+		</span>
+	
+		<div class="social-icons">
+			<a href="https://www.facebook.com/SistemaFIEB/" title="Curta nossa página"><img src="resources/images/facebook.png" alt="Facebook" /></a>
+		</div>
+	</div>
+	
+</div>
 
 
 

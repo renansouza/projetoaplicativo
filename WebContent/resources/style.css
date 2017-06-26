@@ -31,6 +31,7 @@ table {
 
 .container-fluid{
 	width: 100%;
+	clear: both;
 }
 
 .container-fix{
@@ -46,14 +47,37 @@ table {
 /* NAVEGAÇÃO */
 
 #main-navigation{
-	height: 170px;
-	background: rgba(0,102,153,0.70);
+	height: 120px;
+	background: rgba(255,255,255,0.80);
+}
+
+.logotipo{
+	position: relative;
+	float: left;
+	top: 5px;
+}
+
+.navigation{
+	float: right;
+	position: relative;
+}
+.navigation a{
+	font: 16px sans-serif;
+	float: left;
+	padding: 51px 25px;
+	transition: 0.5s;
+}
+.navigation a:hover{
+	background: #004C8E;
+	color: #FFF;
+	text-decoration: none;
+	transition: 0.5s;
 }
 
 /* CONTENT */
 
 #content{
-	background: url('./images/content-bg.png') center center no-repeat;
+	background: url('./images/content-bg.png') top center no-repeat;
 	position: absolute;
 	background-size: cover;
 }
@@ -61,6 +85,8 @@ table {
 .senai-image{
 	float: left;
 	width: 700px;
+	position: relative;
+	top: 30px;
 }
 
 .cadastro{
@@ -71,8 +97,25 @@ table {
 	padding: 1rem;
 }
 
+.cadastro h2{
+	font: 250% sans-serif;
+	font-weight: bold;
+	margin: 5px 0 10px 0;
+	color: #333;
+}
+.cadastro h3{
+	font: 150% sans-serif;
+	margin: 0 0 10px 0;
+	font-weight: bold;
+	padding-bottom: 10px;
+	border-bottom: 1px dashed #666;
+	color: #333;
+}
+
 #main-content{
 	margin-top: 15%;
+	position: relative;
+	height: 530px;
 }
 
 #main-content form{
@@ -80,17 +123,42 @@ table {
 	width: 100%;
 }
 #main-content form label{
-	font: 1.2rem sans-serif ;
+	font: 1.0rem sans-serif;
+	margin: 5px;
 }
-#main-content form input{
+
+#main-content form span{
+	font: 0.8rem sans-serif ;
+	margin: 10px;
+	float: left;
+}
+
+.ui-inputtext{
+	box-shadow: none;
 	padding: 10px;
 	display: block;
 	width: 100%;
 	font: 1.2rem sans-serif ;
 }
-#main-content form span{
-	font: 1rem sans-serif ;
-	margin: 10px;
+
+#rodape{
+	height: 70px;
+	background: #004C8E;
+	position: absolute;
+	bottom: -100px;
+	z-index: 99999;
+}
+.copyright{
+	font: 0.8rem sans-serif;
+	color: #FFF;
+	position: relative;
+	top: 15px;
+	line-height: 24px;
 	float: left;
 }
 
+.social-icons{
+	float: right;
+	position: relative;
+	top: 20px;
+}
